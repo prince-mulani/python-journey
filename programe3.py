@@ -1,5 +1,8 @@
-lst=[4,5,6,8,9,10,1,100,2]
-lst.sort()
-print(lst[0])
-m=min(lst)
-print(m)
+lst=[5,3,8,1]
+for i in range(len(lst)):
+    for j in range(len(lst)-1):
+        if lst[j]>lst[j+1]:
+            lst[j],lst[j+1]=lst[j+1],lst[j]
+
+print(lst)
+     
