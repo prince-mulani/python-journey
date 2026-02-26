@@ -1,13 +1,5 @@
-number=[]
-for i in range(5):
-   num= int(input("enter the number:"))
-   number.append(num)
-
-total = 0
-for n in number:
-   total=total + n
-
-
-print(number)
-print("sum",total)
-
+# modify list without creting new list
+lst =[1,2,3,4,5]
+for i in range(len(lst)):
+    lst[i]=lst[i]*2
+print(lst)
